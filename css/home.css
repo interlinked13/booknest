@@ -1,0 +1,114 @@
+/* =====================================================
+   LIBRARY HEADER (index page)
+===================================================== */
+.library {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    linear-gradient(rgba(25, 83, 95, 0.65), rgba(25, 83, 95, 0.65)),
+    url("../images/Library4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.library-content {
+  max-width: 600px;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.library-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: var(--light);
+}
+
+.library-content p {
+  font-size: 1.15rem;
+  color: var(--cream);
+  margin-bottom: 2rem;
+}
+
+/* =====================================================
+   GENRES SECTION
+===================================================== */
+
+.genres {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.genres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.genre-card {
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: var(--transition);
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.genre-card i {
+  font-size: 2.5rem;
+  color: var(--teal--);
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.genre-card:hover {
+  box-shadow: 0 15px 30px rgba(25, 83, 95, 0.15);
+}
+.genre-card:hover i {
+  color: var(--maroon);
+  transform: scale(1.15) rotate(-5deg);
+}
+
+.genre-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.genre-card p {
+  font-size: 0.9rem;
+  color: #6f7d80;
+}
+
+/* staggered fade-in */
+.genre-card:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.genre-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.genre-card:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.genre-card:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.genre-card:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.genre-card:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.genre-card:nth-child(7) {
+  animation-delay: 0.35s;
+}
+.genre-card:nth-child(8) {
+  animation-delay: 0.4s;
+}

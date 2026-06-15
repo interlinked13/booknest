@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Book | BookNest</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  </head>
+  <body>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <i class="fa-solid fa-book-open"></i> BookNest
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="books.html">All Books</a></li>
+          <li><a href="request.html" class="active">Request a Book</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ===== Page Banner ===== -->
+    <header class="page-banner">
+      <h1>Request a Book</h1>
+      <p>Can't find what you're looking for? Let us know!</p>
+    </header>
+
+    <!-- Request Form -->
+    <main class="form-section">
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Full name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="book-title">Book Title</label>
+          <input
+            type="text"
+            id="book-title"
+            name="book-title"
+            placeholder="Book Title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input
+            type="text"
+            id="author"
+            name="author"
+            placeholder="Author Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="year">Published Year</label>
+          <input type="date" id="date" name="date" />
+        </div>
+
+        <div class="form-group">
+          <label for="genre">Genre</label>
+          <select name="genre" id="genre">
+            <option value="Fiction">Fiction</option>
+            <option value="non-fiction">Non-Fiction</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="mystery">Mystery</option>
+            <option value="romance">Romance</option>
+            <option value="sci-fi">Sci-Fi</option>
+            <option value="horror">Horror</option>
+            <option value="history">History</option>
+            <option value="children">Children's</option>
+            <option value="self-help">Self-Help</option>
+            <option value="psychology">Psychology</option>
+            <option value="science">Science</option>
+            <option value="strategy">Strategy</option>
+            <option value="philosophy">Philosophy</option>
+          </select>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="notes">Additional Notes</label>
+          <textarea
+            name="notes"
+            id="notes"
+            placeholder="Any extra details"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Request</button>
+      </form>
+    </main>
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3><i class="fa-solid fa-book-open"></i>BookNest</h3>
+          <p>
+            Your cozy corner for books of every kind. Read more, dream more.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Visit Us</h3>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>6th District Municipality
+            Road, Pole Sorkh, Kabul
+          </p>
+          <p><i class="fa-solid fa-phone"></i>+93 70 834 8446</p>
+          <p><i class="fa-solid fa-envelope"></i>alireza.elia@outlook.com</p>
+        </div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BookNest. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
